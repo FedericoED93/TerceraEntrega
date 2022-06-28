@@ -1,0 +1,115 @@
+main {
+
+    article {
+        --bs-gutter-x: 0;
+
+        .div_main {
+            background-color: map-get($coloresgenerales, color1);
+            color: map-get($coloresgenerales, color4);
+            font-size: 0.8rem;
+            --bs-gutter-x: 0;
+
+            h2 {
+                padding-top: 10%;
+                margin-left: 1rem;
+                width: 80%;
+                text-align: left;
+                font-weight: map-get($textos, grosor1);
+                font-size: 2rem;
+            }
+
+            p {
+                padding-top: 5%;
+                margin-left: 1rem;
+                width: 80%;
+                text-align: left;
+                font-size: 1rem;
+            }
+        }
+
+        .div_main-img {
+            background-color: map-get($coloresgenerales , color4);
+            object-fit: cover;
+            width: 50%;
+            padding-right: 0;
+            padding-left: 0;
+            --bs-gutter-x: 0;
+
+            img {
+                padding-right: 0;
+                padding-left: 0;
+            }
+        }
+    }
+
+    .card-main-row {
+        @extend %cards-base;
+        background-color: map-get($coloresgenerales, color1);
+        background-image: url(../assets/TRAMA-BLANCA.png);
+        background-size: cover;
+    }
+
+    .card-mod {
+        @extend %cards-mod;
+    }
+
+    .card-mod-img {
+        object-fit: contain;
+        height: 20rem;
+        width: 100%;
+
+    }
+
+    .titulo_primerainfancia {
+        color: map-get($coloresfondo, fondo1 );
+        @include titles ($fuenteS, $margentop, $margenbottom, $fuenteW, $textA, $guttervalue)
+    }
+
+    .titulo_juegosdemesa{
+        color: map-get($coloresfondo, fondo2 );
+        @include titles ($fuenteS, $margentop, $margenbottom, $fuenteW, $textA, $guttervalue)
+    }
+    
+    .titulo_construccion{
+        color: map-get($coloresfondo, fondo4 );
+        @include titles ($fuenteS, $margentop, $margenbottom, $fuenteW, $textA, $guttervalue)
+    }
+
+    .titulo_ciencia{
+        color: map-get($coloresfondo, fondo5 );
+        @include titles ($fuenteS, $margentop, $margenbottom, $fuenteW, $textA, $guttervalue)
+    }
+
+    .titulo_rompecabezas{
+        color: map-get($coloresfondo, fondo3 );
+        @include titles ($fuenteS, $margentop, $margenbottom, $fuenteW, $textA, $guttervalue)
+    }
+
+    .card-desc {
+        color: map-get($coloresgenerales, color3);
+    }
+
+    .btn-carrito {
+        margin-top: 1rem;
+        background-color: map-get($coloresgenerales, color3 );
+        color: map-get($coloresgenerales, color4);
+        font-weight: bold;
+    }
+
+    .btn-carrito:hover {
+        transform: scale(1.05);
+        color: map-get($textos, cletra4 );
+    }
+}
+
+@media (max-width: 991.98px) {
+
+    .index-img {
+        display: none;
+    }
+
+    .div_main-img {
+        width: 100%;
+    }
+
+}

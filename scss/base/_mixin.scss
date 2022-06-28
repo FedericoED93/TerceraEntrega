@@ -1,0 +1,8 @@
+@mixin titles ($fuenteS, $margentop, $margenbottom, $fuenteW, $textA, $guttervalue) {
+    font-size: $fuenteS;
+    margin-top: $margentop;
+    margin-bottom: $margenbottom;
+    font-weight:$fuenteW;
+    text-align: $textA;
+    --bs-gutter-y:$guttervalue;
+}
